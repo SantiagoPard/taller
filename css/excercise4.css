@@ -1,0 +1,18 @@
+.content-form{
+    display: flex;
+    flex-direction: column;
+}
+.green{
+    color: green;
+}
+body{
+    margin: 100px;
+}
+.contetx-resultado{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+.red{
+    color: red;
+}
