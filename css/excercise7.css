@@ -1,0 +1,44 @@
+.form-content{
+    display: grid;
+    grid-template-areas: 
+    'labHead labHead labHead'
+    'lbaN1 lbaN3 lbaN2'
+    'a .b'
+    'boton boton boton'
+    'resultado resultado resultado';
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.form-content #Num1{
+    grid-area: a;
+}
+.form-content #Num2{
+    grid-area: b;
+}
+.form-content #accion{
+    grid-area: boton;
+}
+.form-content #lbN1{
+    grid-area: lbaN1;
+    text-align: center;
+}
+.form-content #lbN2{
+    grid-area: lbaN2;
+    text-align: center;
+}
+.form-content #label{
+    grid-area:lbaN3 ;
+    text-align: center;
+}
+.form-content #labelHead{
+    grid-area:labHead;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(5, 15, 87);
+    color: rgb(5, 5, 255);
+}
+.form-content #resultado{
+    grid-area: resultado;
+    text-align: center;
+}
