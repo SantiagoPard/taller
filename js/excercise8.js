@@ -6,22 +6,42 @@ document.getElementById('accion').addEventListener('click', () => {
     let array = numeros.split(',');
     let cont = array.length - 1;
     let html = '';
+    let validar = 0;
 
     for (let i = 0; i <= cont; i++) {
-
-        numero = array[i];
-        let match = numero.match(/[a-z]/);
+        let numero1 = '';
+        numero1 = array[i];
+        let match = numero1.match(/[a-z]/);
 
         if (Boolean(match) == true) {
-            validarTexYNoEnt(numero);
-            html += '<li>' + validarTexYNoEnt(numero) + '</li>';
-        } else if (Boolean(match) == false) {
+            validar = 1;
+        }
+        let numeroVal = parseFloat(numero1);
+        if (Number.isInteger(numeroVal) == false) {
+            validar = validar + 1;
+        }
+    }
+    for (let j = 0; j <= cont; j++) {
+        if (validar > 0) {
+            let numero = '';
+            numero = array[j];
+            let match = numero.match(/[a-z]/);
+
+            if (Boolean(match) == true) {
+                validarTexYNoEnt(numero);
+                html += '<dd>' + validarTexYNoEnt(numero) + '</dd>';
+            } else if (Boolean(match) == false) {
+                let numero1 = parseFloat(numero);
+                html += '<dd>' + parImpar(numero1) + '</dd>';
+            }
+        } else if (validar == 0) {
+            let numero = '';
+            numero = array[j];
             let numero1 = parseFloat(numero);
             html += '<li>' + parImpar(numero1) + '</li>';
         }
+        document.getElementById('resultado').innerHTML = html;
     }
-    document.getElementById('resultado').innerHTML = html;
-
 })
 
 function parImpar(numero) {
@@ -30,7 +50,7 @@ function parImpar(numero) {
         return numero + '<font color="blue"> es numero par </font>';
     } else if (numero % 2 != 0 && Number.isInteger(numero) == true) {
         return numero + '<font color="green"> es numero impar </font>';
-    }else{
+    } else {
         return numero + '<font color="red"> no es un numero entero</font>';
     }
 
