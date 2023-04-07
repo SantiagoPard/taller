@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: row;
     column-gap: 5px;
+    white-space: pre-wrap;
 }
 .red{
     color: red;
