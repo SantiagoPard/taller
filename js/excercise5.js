@@ -1,17 +1,20 @@
 document.getElementById('accion').addEventListener('click',()=>{
-    let numero = 0;
+    let numero = '';
     numero = document.getElementById('Numero').value;
-    numero = parseFloat(numero);
-    let validacion = Number.isInteger(numero);
-    console.log(validacion);
-    if(numero<0){
-        document.getElementById('output').innerHTML = '<font color="red">Debe ingresar números enteros positivos</font>'
-    }else if(validacion == false){
-        document.getElementById('output').innerHTML = '<font color="red">Debe ingresar números enteros</font>'    
+    if(numero==''){
+        document.getElementById('output').innerHTML = '<font color="red">Debe ingresar un numero</font>'
     }else{
-     parImpar(numero); 
+        numero = parseFloat(numero);
+        let validacion = Number.isInteger(numero);
+        
+        if(numero<0){
+            document.getElementById('output').innerHTML = '<font color="red">Debe ingresar números enteros positivos</font>'
+        }else if(validacion == false){
+            document.getElementById('output').innerHTML = '<font color="red">Debe ingresar números enteros</font>'    
+        }else{
+        parImpar(numero); 
+        }
     }
-    
 })
 
 function parImpar (numero){

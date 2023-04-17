@@ -6,6 +6,6 @@ document.getElementById('accion').addEventListener('click',()=>{
     }else if(edadPer<18 && edadPer>0){
         document.getElementById('output').innerText = 'Hola '+nomPer+',no eres mayor de edad';    
     }else{
-        document.getElementById('output').innerText = 'Hola '+nomPer+',ingresa una edad valida';
+        document.getElementById('output').innerHTML = '<font color="red">Hola '+',ingresa una edad valida </font>';
     }
 })
