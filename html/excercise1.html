@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/exercise1.css">
 </head>
+
 <body>
-    <form >
-        <label for="entrada">ingrese el texto</label><br>
-        <input type="text" name="entrada" id="entrada" required>
-        <button  type="button" name="accion" id="accion">calcular</button>
-        <h1 id="entrada2"></h1>
-        <button type="button"><a href="/html/Index.html" >volver</a></button>
+    <form class="form-content">
+        <div class="all">
+            <div class="item1">
+                <label for="entrada">ingrese el texto</label><br>
+                <input type="text" name="entrada" id="entrada" required>
+            </div>
+            <div class="item2">
+                <button type="button" name="accion" id="accion">calcular</button>
+            </div>
+            <div class="item3">
+                <a href="/html/Index.html">volver</a>
+            </div>
+        </div>
+        <div class="item4" >
+            <h1 id="entrada2"></h1>
+        </div>
     </form>
     <script src="../js/excercise1.js"></script>
 </body>
+
 </html>
