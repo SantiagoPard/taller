@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -21,6 +22,8 @@ body{
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter:blur(10px);
+    width: 15%;
+    height: 15%;
 }
 .form{
     display: flex;
@@ -39,6 +42,7 @@ body{
     backdrop-filter:blur(1px);
 }
 .labelEnt{
+    font-size: x-large;
     color: aliceblue;
 }
 .hidden{
@@ -65,4 +69,33 @@ a{
 a:hover{
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter:blur(1px);
+}
+#accion1{
+    text-decoration: none;
+    color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    transition: background-color .5s;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter:blur(10px);
+}
+
+#accion1:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter:blur(1px);
+    cursor: pointer;
+}
+
+#flex{
+    display:flex;
+    flex-direction: column;
+}
+
+
+#entrada{
+    height: 16px;
+    width: 200px;
+    border-color: black;
 }

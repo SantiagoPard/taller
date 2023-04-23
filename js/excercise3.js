@@ -1,7 +1,7 @@
 document.getElementById('accion').addEventListener('click', () => {
     let nomPer = document.getElementById('nombre').value;
     let edadPer = document.getElementById('edad').value;
-    if (nomPer == "") {
+    if (nomPer == "" && edadPer == "") {
         document.getElementById('output').innerHTML = '<font color="red">Hola ' + ',ingresa un nombre </font>';
     } else {
         if (edadPer >= 18) {
