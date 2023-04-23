@@ -1,5 +1,7 @@
 document.getElementById('accion').addEventListener('click', () => {
 
+    document.getElementById('resultado').classList.remove('hidden');
+
     let nota1 = document.getElementById('Nota1').value;
     let nota2 = document.getElementById('Nota2').value;
     let nota3 = document.getElementById('Nota3').value;

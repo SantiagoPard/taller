@@ -37,3 +37,12 @@ body{
     color: green;
 }
 
+.resultado{
+    border-style: solid;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: rgba(75, 75, 255,0.7);
+}
+.hidden{
+    visibility: hidden;
+}

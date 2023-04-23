@@ -1,6 +1,10 @@
 document.getElementById('accion').addEventListener('click', () => {
+
+    document.getElementById('output').classList.remove('hidden');
+
     let nomPer = document.getElementById('nombre').value;
     let edadPer = document.getElementById('edad').value;
+
     if (nomPer == "" && edadPer == "") {
         document.getElementById('output').innerHTML = '<font color="red">Hola ' + ',ingresa un nombre </font>';
     } else {
