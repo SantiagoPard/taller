@@ -4,6 +4,10 @@
 }
 body{
     background-color: aqua;
+    background: url(..//resources/excercise1.gif);
+    
+    background-repeat: repeat;
+
 }
 
 p {
@@ -21,7 +25,7 @@ p {
     margin-bottom: 10px;
     margin-left: 5  px;
     align-items: stretch;
-    /* align-items: center; */
+    align-items: center; 
     background-color: antiquewhite;
 }
 

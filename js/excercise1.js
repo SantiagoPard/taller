@@ -1,4 +1,5 @@
 document.getElementById('accion').addEventListener('click',()=>{
+    document.getElementById('divEnt2').classList.remove('hidden');
     let texto = '';
     texto = document.getElementById('entrada').value;
     if(texto == ''){

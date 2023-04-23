@@ -6,7 +6,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background:url(../resources/847960e5e94961b9c1ef8e84fa81897b.gif);
+    background:url(../resources/excercise1.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -73,4 +73,7 @@ a{
 }
 a:hover{
     background-color: rgb(192, 183, 183);
+}
+.hidden{
+    visibility: hidden;
 }
